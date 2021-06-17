@@ -7,7 +7,7 @@ class Ship():
         self.ai_setting= ai_setting
 
         #load the ship image and get its rect.
-        self.image=pygame.image.load('F:\projects\projectSanghrah\Alien Invasion\images\ship.png')
+        self.image=pygame.image.load((r'D:\projects\projectSanghrah\Alien Invasion\images\ship.png'))
         self.rect=self.image.get_rect()
         self.screen_rect=screen.get_rect()
 
@@ -36,3 +36,7 @@ class Ship():
     def blitme(self):
         #Draw the ship at its current location.
         self.screen.blit(self.image,self.rect)
+
+    def center_ship(self):
+        ''' Center the ship on the screen '''
+        self.center=self.screen_rect.centerx
