@@ -1,3 +1,4 @@
+//You should provide documentation with your code
 import sys
 import pygame
 from pygame.sprite import Group
